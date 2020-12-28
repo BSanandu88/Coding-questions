@@ -1,6 +1,7 @@
 //Given an array nums of distinct integers return all the possible permutations .You can return the answer in any order
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 vector<vector<int>>ans;
 
@@ -24,6 +25,11 @@ int32_t main(){
         cin>>i;
     }
     permute(a,0);
+    //using stl library!!!
+    sort(a.begin(),a.end());
+    do{
+        ans.push_back(a);
+    }while(next_permutation(a.begin(),a.end()));
     for(auto v : ans){
            for(auto i : v ){
                cout<<i<<" ";
