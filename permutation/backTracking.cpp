@@ -15,7 +15,7 @@ bool ratInMaze(int** arr,int x,int y,int n,int** sol)
 {
 
     //base
-    if((x=n-1) && (y=n-1))
+    if((x=(n-1)) && (y=(n-1)))
     {
         sol[x][y] = 1;
         return true;
