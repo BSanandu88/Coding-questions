@@ -4,6 +4,10 @@
 
 using namespace std;
 
+bool myCompare(pair<int,int>p1,pair<int,int>p2){
+    return p1.first < p2.first;
+    }
+
 int main(){
     vector<int>v;
     v.push_back(1);
@@ -36,6 +40,23 @@ int main(){
     pair<int,int> p;
     p.first = 100;
     p.second = 98;
-    
+    int arr[] = {10,16,7,14,5,3,2,9};
+    vector<pair<int,int>>vp;
+    for(int i=0;i<(sizeof(arr)/sizeof(arr[0]));i++){
+       vp.push_back(make_pair(arr[i],i));
+
+    }
+    sort(vp.begin(),vp.end(),myCompare);
+
+    for(int i=0;i<vp.size();i++){
+        arr[vp[i].second] =i;
+
+    }
+    for(int i=0;i<vp.size();i++){
+        cout<<arr[i]<<" ";
+
+    }
+
+
     return 0;
 }
