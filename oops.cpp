@@ -25,6 +25,10 @@ class student{
         gender = a.gender;
     }
 
+    ~student(){
+        cout<<"Destructor"<<endl;
+    }
+
    void setName(string s){
        name = s;
    }
@@ -40,6 +44,13 @@ class student{
         cout<<age<<endl;
         cout<<"Gender = ";
         cout<<gender<<endl;
+    }
+
+    bool operator == (student &a){
+        if(name==a.name && age==a.age && gender == a.gender){
+            return true;
+        }
+        return false;
     }
 };
 
@@ -61,5 +72,12 @@ int main(){
     //a.printInfo();
     student b;
     student c = a;
+
+    if(c == a){
+        cout<<"Same"<<endl;
+    }
+    else{
+        cout<<"Not same"<<endl;
+    }
     return 0;
 }
