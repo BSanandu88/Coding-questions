@@ -8,14 +8,22 @@ class student{
     bool gender;
 
     student(){
-        cout<<"Default constructor";
+        cout<<"Default constructor"<<endl;
     }
 
     student (string s,int a,int g){
+        cout<<"parameterised constructor"<<endl;
         name = s;
         age = a;
         gender = g;
     }//parameterised constructor
+
+    student(student &a){
+        cout<<"copy constructor"<<endl;
+        name = a.name;
+        age = a.age;
+        gender = a.gender;
+    }
 
    void setName(string s){
        name = s;
@@ -50,7 +58,8 @@ int main(){
     //     arr[i].printInfo();
     // }
     student a("anandu",20,0);
-    a.printInfo();
+    //a.printInfo();
     student b;
+    student c = a;
     return 0;
 }
