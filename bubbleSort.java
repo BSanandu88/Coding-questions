@@ -1,6 +1,7 @@
 import java.util.*;
+import java.util.Scanner;
 
-public class MyClass {
+public class bubbleSort {
     public static void main(String args[]) {
       Scanner s = new Scanner(System.in);
       int[] nums = {1,5,2,9,43,26};
