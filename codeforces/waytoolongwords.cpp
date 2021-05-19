@@ -27,7 +27,7 @@ int main(){
         int n = s.size();
         if(n > 10){
             string s1;
-            s1 = s[0] + to_string(n) + s[n - 1]; 
+            s1 = s[0] + to_string(n - 2) + s[n - 1]; 
             cout << s1 << endl;
         }else{
             cout << s << endl;
