@@ -24,7 +24,7 @@ int main(){
     while(t--) {
         string s;
         cin >> s;
-        int n = s.length();
+        int n = s.size();
         if(n > 10){
             string s1;
             s1 = s[0] + to_string(n) + s[n - 1]; 
