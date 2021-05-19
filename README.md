@@ -1,3 +1,7 @@
 # CodingQuestions
 This repository contains some of questions solved from 
-various platforms.Keep learning!!
+various platforms.
+ - Leetcode
+ - Codechef
+ - Codeforces
+ - GeeksForGeeks
