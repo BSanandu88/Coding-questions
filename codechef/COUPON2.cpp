@@ -67,9 +67,9 @@ void solve(){
         int withoutc = td1 + td2 + 2*d;
         if(withoutc > withc){
             cout << "YES" <<endl;
-        }else if(withc == withoutc){
+        }/* else if(withc == withoutc){
             cout <<"NO"<<endl;
-        }else{
+        } */else{
             cout <<"NO"<<endl;
         }
     }else if(td1 >= 150 or td2 >= 150){
@@ -78,9 +78,9 @@ void solve(){
         if (withoutc > withc)
         {
            cout << "YES" <<endl;
-        }else if(withc == withoutc){
+        }/* else if(withc == withoutc){
             cout <<"NO"<<endl;
-        }else{
+         */}else{
             cout<<"NO"<<endl;
         }
          
