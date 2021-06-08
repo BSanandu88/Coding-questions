@@ -40,4 +40,7 @@ while n > 0:
         turn = 'human'
         print(f'Computer\'s choice : {computer}')
         print(f'##### Marbles remaining : {n}')
-          
+if turn == 'human':
+    print('You win!')
+if turn == 'computer':
+    print('Computer wins!')
