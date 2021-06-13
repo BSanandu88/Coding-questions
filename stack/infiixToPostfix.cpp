@@ -1,5 +1,7 @@
 #include<iostream>
 #include<stack>
+#include<string>
+#include<algorithm>
 using namespace std;
 
 int prec(char c){  
