@@ -1,3 +1,5 @@
+
+
 def insert(x,l):
     out_l = []
     inserted = False
@@ -10,6 +12,12 @@ def insert(x,l):
         out_l.append(x)
     return out_l
 
-l = [1,3,5,7]
+def isort(l):
+    out_l = []
+    for elem in l:
+        out_l = insert(elem,out_l)
+    return out_l
+
+l = [1,4,33,12,78,90]
 x = 4
-print(insert(x,l))
+print(isort(l))
