@@ -60,7 +60,7 @@ class Solution {
 public:
     int numberOfWeakCharacters(vector<vector<int>>& arr) {
         // sort on attack
-        sort(nums.begin(),nums.end());
+        sort(arr.begin(),arr.end());
         multiset<int>s; // stores defense
         for(auto ele : arr){
             s.insert(ele[1]);
@@ -69,8 +69,17 @@ public:
         for(int i=0;i<arr.size();i++){
             int j = i;
             if(i == 0 or arr[i][0] != arr[i-1][0]){
-                
+                while(j < arr.size() and arr[j][0] == arr[i][0]){
+                    auto idx = s.find(arr[j][1]);
+                    s.erase(idx);
+                    j++;
+                }
             }
+            auto idx = s.upper_bound(arr[i][1]);
+            if(idx != s.end()){
+                c++;
+            }
+            return c;
         }
     }
 };
