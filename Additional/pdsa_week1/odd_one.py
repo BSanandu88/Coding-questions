@@ -8,17 +8,16 @@ def odd_one(l):
                 continue
             else:
                 if(type(l[j]) == int):
-                    ans = "ans"
+                    ans = "int"
                 elif(type(l[j]) == str):
                     ans = "str"
                 elif(type(l[j]) == bool):
                     ans = "bool"
                 elif(type(l[j]) == float):
-                    ans = "int"
+                    ans = "float"
                 else:
                     pass
-                break
-
+        break
     return ans
 
 
