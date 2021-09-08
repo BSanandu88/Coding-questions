@@ -22,5 +22,5 @@ def odd_one(l):
 
 
 
-l = [1,2,3.4,5,10]
+l = [1,2,False,5,10]
 print(odd_one(l))
