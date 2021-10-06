@@ -6,7 +6,7 @@ void solve(){
     cin >> n >> q;
     string s;
     cin >> s;
-    long long int  v[n + 1];
+    vector<long long int > v(n + 1);
     v[0] = 0;
     for(int i=1; i<(n + 1); i++){
         v[i] = v[i - 1] + ((s[i - 1] - 'a') + 1);
@@ -25,10 +25,6 @@ int main(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-    int t = 1;
-    cin >> t;
-    while(t--){
-        solve();
-    }
+    solve();
     return 0;
 }
