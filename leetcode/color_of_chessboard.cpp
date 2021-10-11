@@ -1,3 +1,4 @@
+// good logic based question
 class Solution {
 public:
     bool squareIsWhite(string c) {
